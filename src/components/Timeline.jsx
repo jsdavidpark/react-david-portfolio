@@ -6,28 +6,30 @@ import { motion, AnimatePresence } from "framer-motion";
 const academicData = [
   {
     year: "2022",
-    title: "Queen's University: General Engineering",
-    description: "Enrolled in General Engineering(BaSc) at Queen's University.",
+    title: "QUEEN'S UNIVERSITY",
+    description:
+      "ENROLLED IN GENERAL ENGINEERING ( BASC ) PROGRAM AT QUEEN'S UNIVERSITY.",
   },
   {
     year: "2023",
-    title: "Applied Mathematics Specialization",
-    description: "Specialized in Applied Mathematics in Computer Engineering.",
+    title: "APPLIED MATHEMATICS SPECIALIZATION",
+    description:
+      "SPECIALIZATION IN ENGINEERING DISCIPLINE APPLIED MATHEMATICS : COMPUTING AND COMMUNICATIONS.",
   },
   {
     year: "2025",
-    title: "Relectric",
+    title: "RELECTRIC",
     description:
-      "Joined Relectric, Queen's EV Engineering Club, and led to design the Battery Box of our EV vehicle.",
+      "JOINED RELECTRIC, QUEEN'S EV ENGINEERING CLUB, AND LED TO DESIGN THE BATTERY BOX JEEP EV VEHICLE.",
   },
 ];
 
 const professionalData = [
   {
     year: "2025",
-    title: "Ongoing Search for Internship/Co-op",
+    title: "ONGOING SEARCH FOR INTERNSHIP/CO-OP",
     description:
-      "Looking for an internship/co-op for this year, generally looking in the field of software, analyst, data scientist, engineering project intern, and more.",
+      "LOOKING FOR AN INTERNSHIP/CO-OP FOR THIS YEAR, GENERALLY LOOKING IN THE FIELD OF SOFTWARE, ANALYST, DATA SCIENTIST, ENGINEERING PROJECT INTERN, AND MORE.",
   },
 ];
 
