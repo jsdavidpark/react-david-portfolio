@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { FiGithub, FiLinkedin, FiTwitter, FiMenu, FiX } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 const Header = () => {
   // Toggle the Menu open/close
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -200,7 +200,7 @@ const Header = () => {
             onClick={() => {
               toggleMenu();
             }}
-            className="mt-4 py-0.5 rounded-xl block w-full bg-black text-white hover:bg-[#98c1d9] hover:text-white cursor-pointer"
+            className="mt-4 py-0.5 rounded-xl block w-full bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white cursor-pointer"
           >
             CONTACT ME
           </button>
