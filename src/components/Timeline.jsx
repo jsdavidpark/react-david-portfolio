@@ -1,7 +1,6 @@
-import Prof from "../assets/bbag.png";
-import Acad from "../assets/gradcap.png";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PiSuitcaseSimple, PiGraduationCap } from "react-icons/pi";
 
 const academicData = [
   {
@@ -45,22 +44,22 @@ function Timeline() {
           onClick={() => setMode("academic")}
           className={`py-2 px-6 rounded-full flex items-center gap-2 text-sm font-medium transition-all duration-200 ${
             mode === "academic"
-              ? "bg-black text-white"
-              : "text-gray-600 hover:text-gray-900"
+              ? "bg-[#98c1d9] text-white"
+              : "text-gray-500 hover:text-gray-800"
           }`}
         >
-          <img src={Acad} alt="Academic" className="w-4 h-4" />
+          <PiGraduationCap className="w-4 h-4" />
           ACADEMIC
         </button>
         <button
           onClick={() => setMode("professional")}
           className={`py-2 px-6 rounded-full flex items-center gap-2 text-sm font-medium transition-all duration-200 ${
             mode === "professional"
-              ? "bg-black text-white"
-              : "text-gray-600 hover:text-gray-900"
+              ? "bg-[#98c1d9] text-white"
+              : "text-gray-500 hover:text-gray-800"
           }`}
         >
-          <img src={Prof} alt="Professional" className="w-4 h-4" />
+          <PiSuitcaseSimple className="w-4 h-4" />
           PROFESSIONAL
         </button>
       </div>

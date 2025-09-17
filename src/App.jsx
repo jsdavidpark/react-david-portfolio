@@ -8,7 +8,6 @@ const App = () => {
     <>
       <Router>
         <Header />
-        
         <AnimRoutes />
       </Router>
     </>
