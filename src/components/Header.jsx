@@ -52,7 +52,7 @@ const Header = () => {
                 delay: index * 0.1,
                 duration: 0.8,
               }}
-              className="relative text-gray-800 dark:text-gray-200 hover:text-[#98c1d9] dark:hover:text-green-400 font-medium transition-colors duration-300 group"
+              className="relative text-gray-800 hover:text-[#98c1d9] font-medium transition-colors duration-300 group"
             >
               {item.toUpperCase()}
               <span className="absolute left-0 bottom-0 w-0 h-0.5 text-[#98c1d9] group-hover:w-full transition-all duration-300"></span>
@@ -69,7 +69,7 @@ const Header = () => {
               delay: 0.3,
               duration: 0.8,
             }}
-            className="text-gray-700 dark:text-gray-300 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
+            className="text-gray-800 hover:text-[#98c1d9] transition-colors duration-300"
             href="#"
           >
             <FiGithub className="w-5 h-5" />
@@ -82,7 +82,7 @@ const Header = () => {
               delay: 0.4,
               duration: 0.8,
             }}
-            className="text-gray-700 dark:text-gray-300 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
+            className="text-gray-800 hover:text-[#98c1d9] transition-colors duration-300"
             href="#"
           >
             <FiLinkedin className="w-5 h-5" />
@@ -95,7 +95,7 @@ const Header = () => {
               delay: 0.5,
               duration: 0.8,
             }}
-            className="text-gray-700 dark:text-gray-300 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
+            className="text-gray-800 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
             href="#"
           >
             <FiTwitter className="w-5 h-5" />
@@ -106,7 +106,7 @@ const Header = () => {
             whileTap={{ scale: 0.7 }}
             initial={{ opacity: 1, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-4 px-4 py-2 rounded-xl bg-black text-white hover:bg-[#98c1d9] hover:text-white transition-all duration-300"
+            className="ml-4 px-4 py-2 rounded-xl bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white transition-all duration-300"
           >
             HIRE ME
           </motion.button>
@@ -116,9 +116,9 @@ const Header = () => {
         <div className="md:hidden flex items-center">
           <motion.button whileTap={{ scale: 0.7 }} onClick={toggleMenu}>
             {isOpen ? (
-              <FiX className="h-6 w-6 cursor-pointer" />
+              <FiX className="h-6 w-6 cursor-pointer text-gray-800" />
             ) : (
-              <FiMenu className="h-6 w-6 cursor-pointer" />
+              <FiMenu className="h-6 w-6 cursor-pointer text-gray-800" />
             )}
           </motion.button>
         </div>

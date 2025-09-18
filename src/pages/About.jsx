@@ -16,7 +16,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-sm font-light tracking-widest text-gray-500 mb-4">
+          <h1 className="text-sm font-black tracking-relaxed text-gray-500 mb-4">
             ABOUT ME
           </h1>
           <div className="my-12 h-[1px] w-full bg-gray-100 origin-left" />

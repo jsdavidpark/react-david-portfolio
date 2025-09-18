@@ -74,7 +74,7 @@ function ProjectTab({ project, index }) {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="flex items-center gap-2 text-gray-700 cursor-pointer hover:text-green-600 transition-colors duration-300"
+              className="flex items-center gap-2 text-gray-700 cursor-pointer hover:text-[#98c1d9] transition-colors duration-300"
             >
               <FaGithub />
               <span className="text-sm font-medium">CODE</span>
@@ -82,7 +82,7 @@ function ProjectTab({ project, index }) {
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="flex items-center gap-2 text-gray-700 cursor-pointer hover:text-green-600 transition-colors duration-300"
+              className="flex items-center gap-2 text-gray-700 cursor-pointer hover:text-[#98c1d9] transition-colors duration-300"
             >
               <FaEye />
               <span className="text-sm font-medium">DEMO</span>
@@ -301,7 +301,7 @@ function Projects() {
                     cx="20"
                     cy="20"
                     r="16"
-                    stroke="#424242"
+                    stroke="#1F2937"
                     strokeWidth="3"
                     fill="none"
                   />
