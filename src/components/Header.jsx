@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiTwitter, FiMenu, FiX } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiInstagram, FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
@@ -70,7 +70,7 @@ const Header = () => {
               duration: 0.8,
             }}
             className="text-gray-800 hover:text-[#98c1d9] transition-colors duration-300"
-            href="#"
+            href="https://github.com/jsdavidpark"
           >
             <FiGithub className="w-5 h-5" />
           </motion.a>
@@ -83,7 +83,7 @@ const Header = () => {
               duration: 0.8,
             }}
             className="text-gray-800 hover:text-[#98c1d9] transition-colors duration-300"
-            href="#"
+            href="https://www.linkedin.com/in/david-park-177718269/"
           >
             <FiLinkedin className="w-5 h-5" />
           </motion.a>
@@ -95,10 +95,10 @@ const Header = () => {
               delay: 0.5,
               duration: 0.8,
             }}
-            className="text-gray-800 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
-            href="#"
+            className="text-gray-800 hover:text-[#98c1d9] transition-colors duration-300"
+            href="https://www.instagram.com/davidjspark_/"
           >
-            <FiTwitter className="w-5 h-5" />
+            <FiInstagram className="w-5 h-5" />
           </motion.a>
 
           {/* Hire Me Button */}
@@ -106,9 +106,13 @@ const Header = () => {
             whileTap={{ scale: 0.7 }}
             initial={{ opacity: 1, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="ml-4 px-4 py-2 rounded-xl bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white transition-all duration-300"
           >
-            HIRE ME
+            <Link
+              to="/contact"
+              className="ml-4 px-4 py-2 rounded-xl bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white transition-all duration-300"
+            >
+              HIRE ME
+            </Link>
           </motion.button>
         </div>
 
@@ -157,7 +161,7 @@ const Header = () => {
         <div className="pt-4 border-t border-gray-200">
           <div className="flex space-x-5">
             <motion.a
-              href="#"
+              href="https://github.com/jsdavidpark"
               initial={{ opacity: 1, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -170,7 +174,7 @@ const Header = () => {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="https://www.linkedin.com/in/david-park-177718269/"
               initial={{ opacity: 1, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -183,7 +187,7 @@ const Header = () => {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="https://www.instagram.com/davidjspark_/"
               initial={{ opacity: 1, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -192,18 +196,17 @@ const Header = () => {
               }}
               className="text-gray-700 dark:text-gray-300 hover:text-[#98c1d9] dark:hover:text-green-400 transition-colors duration-300"
             >
-              <FiTwitter className="w-5 h-5 txt-gray-800" />
+              <FiInstagram className="w-5 h-5 txt-gray-800" />
             </motion.a>
           </div>
 
-          <button
-            onClick={() => {
-              toggleMenu();
-            }}
-            className="mt-4 py-0.5 rounded-xl block w-full bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white cursor-pointer"
+          <Link
+            to="/contact"
+            onClick={toggleMenu}
+            className="mt-4 py-0.5 rounded-xl block w-full bg-gray-800 text-white hover:bg-[#98c1d9] hover:text-white cursor-pointer text-center"
           >
-            CONTACT ME
-          </button>
+            HIRE ME
+          </Link>
         </div>
       </motion.div>
     </header>
